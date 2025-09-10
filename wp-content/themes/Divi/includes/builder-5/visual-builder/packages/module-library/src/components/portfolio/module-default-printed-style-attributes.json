@@ -1,0 +1,29 @@
+{
+  "_comment": "!!! THIS IS AN AUTOMATICALLY GENERATED FILE - DO NOT EDIT !!!",
+  "portfolioGrid": {
+    "decoration": {
+      "layout": {
+        "desktop": {
+          "value": {
+            "columnGap": "5.5%",
+            "rowGap": "40px"
+          }
+        }
+      }
+    }
+  },
+  "title": {
+    "decoration": {
+      "font": {
+        "font": {
+          "desktop": {
+            "value": {
+              "headingLevel": "h2",
+              "size": "18px"
+            }
+          }
+        }
+      }
+    }
+  }
+}

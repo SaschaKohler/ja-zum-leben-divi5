@@ -1,0 +1,91 @@
+{
+  "key": "group_66e00a4c2b1a1",
+  "title": "Event Felder",
+  "fields": [
+    {
+      "key": "field_66e00a6f2b1a2",
+      "label": "Event-Datum",
+      "name": "event_date",
+      "type": "date_picker",
+      "instructions": "Datum des Events",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "display_format": "d.m.Y",
+      "return_format": "Y-m-d",
+      "first_day": 1
+    },
+    {
+      "key": "field_66e00a9a2b1a3",
+      "label": "Wochentag",
+      "name": "event_day",
+      "type": "text",
+      "instructions": "Wochentag (z. B. Mittwoch)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "Mittwoch",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_66e00abf2b1a4",
+      "label": "Tagesnummer",
+      "name": "event_day_number",
+      "type": "number",
+      "instructions": "Tagesnummer (z. B. 15)",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "15",
+      "prepend": "",
+      "append": "",
+      "min": "",
+      "max": "",
+      "step": ""
+    },
+    {
+      "key": "field_66e00ae32b1a5",
+      "label": "Veranstaltungsort",
+      "name": "event_location",
+      "type": "text",
+      "instructions": "Ort des Events",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "default_value": "",
+      "placeholder": "Wien",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_66e00b0a2b1a6",
+      "label": "Uhrzeit",
+      "name": "event_time",
+      "type": "time_picker",
+      "instructions": "Uhrzeit des Events",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": { "width": "", "class": "", "id": "" },
+      "display_format": "H:i",
+      "return_format": "H:i"
+    }
+  ],
+  "location": [
+    [
+      { "param": "post_type", "operator": "==", "value": "events" }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Felder für den Custom Post Type Events"
+}

@@ -1,0 +1,31 @@
+{
+  "_comment": "!!! THIS IS AN AUTOMATICALLY GENERATED FILE - DO NOT EDIT !!!",
+  "module": {
+    "meta": {
+      "adminLabel": {
+        "desktop": {
+          "value": "Icon List Item"
+        }
+      }
+    }
+  },
+  "content": {
+    "innerContent": {
+      "desktop": {
+        "value": "List item text"
+      }
+    }
+  },
+  "icon": {
+    "innerContent": {
+      "desktop": {
+        "value": {
+          "unicode": "&#x21;",
+          "type": "divi",
+          "weight": "400",
+          "target": "off"
+        }
+      }
+    }
+  }
+}

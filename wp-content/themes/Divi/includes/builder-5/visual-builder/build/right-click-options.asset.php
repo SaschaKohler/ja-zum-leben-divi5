@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('divi-clipboard', 'divi-data', 'divi-global-data', 'divi-keyboard-shortcuts', 'divi-module-utils', 'divi-ui-library', 'divi-vendor-react', 'divi-vendor-wp-hooks', 'divi-vendor-wp-i18n', 'divi-window', 'lodash'), 'version' => 'b9a62f17db868749a1fb');
