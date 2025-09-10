@@ -1,0 +1,70 @@
+# --- General system files ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/
+.vscode/
+.fleet/
+*.code-workspace
+
+# --- Environment & local overrides ---
+.env
+.env.*
+!.env.example
+
+# --- Archives & dumps ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.rar
+*.7z
+*.sql
+*.sql.gz
+
+# --- Node / Composer ---
+node_modules/
+vendor/
+
+# --- WordPress typical ---
+wp-content/upgrade/
+wp-content/cache/
+wp-content/et-cache/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/uploads/
+
+# Keep child theme and ACF JSON tracked
+!wp-content/themes/divi-child/
+!wp-content/themes/divi-child/**
+!wp-content/themes/divi-child/acf-json/
+!wp-content/themes/divi-child/acf-json/**
+
+# --- DDEV ---
+# DDEV project config should be committed; do NOT ignore .ddev/
+# Ignore user-specific global files if any accidentally placed here
+.ddev/.downloads/
+.ddev/commands/host/**/README.*
+
+# --- Misc ---
+.sass-cache/
+.cache/
+.tmp/
+coverage/
+.dist/
+.dist-assets/
+build/
+dist/
+
+# --- Images/exports from local testing ---
+screenshots/
+exports/
