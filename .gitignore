@@ -68,3 +68,12 @@ dist/
 # --- Images/exports from local testing ---
 screenshots/
 exports/
+
+# --- Analytics/Tag Manager exports (do not commit secrets/IDs) ---
+GTM-*.json
+*container*.json
+*tagmanager*.json
+*tag-assistant*.json
+
+# Explicitly ignore local GTM export in repo root
+GTM-P5GZQHVF_v14.json

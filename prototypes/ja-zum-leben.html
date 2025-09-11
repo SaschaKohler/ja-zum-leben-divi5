@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ja zum Leben – Ganzheitliche Gesundheit & Mentaltraining</title>
+  <meta name="description" content="Ja zum Leben: Mentale Stärke & ganzheitliche Gesundheit. Mentaltraining (KLARE-Methode) und Phyto-Energetik mit Bachblüten. Jetzt kostenloses Erstgespräch vereinbaren." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ja zum Leben – Ganzheitliche Gesundheit & Mentaltraining" />
+  <meta property="og:description" content="50 Jahre geballte Expertise: Wenn Mentaltraining auf Phyto-Energetik trifft." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ja zum Leben – Ganzheitliche Gesundheit & Mentaltraining" />
+  <meta name="twitter:description" content="50 Jahre geballte Expertise: Wenn Mentaltraining auf Phyto-Energetik trifft." />
+  <meta name="twitter:image" content="https://example.com/og-image.jpg" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN (Prototype). In production, compile Tailwind and enqueue via WordPress. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              green: '#4A7C59',
+              blue: '#5B9BD5',
+              beige: '#F5F1E8',
+            },
+            accent: {
+              orange: '#E67E22',
+              purple: '#9B59B6',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'],
+          },
+          boxShadow: {
+            soft: '0 10px 30px -10px rgba(0,0,0,0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Helpful utility for section max-width */
+    .container-default { max-width: 1200px; }
+  </style>
+</head>
+<body class="font-sans text-neutral-800 bg-white">
+  <!-- Site Wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Top Bar / Contact quick -->
+    <div class="bg-primary.beige/60 border-b border-neutral-200">
+      <div class="mx-auto container-default px-4 py-2 text-sm flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <span class="text-neutral-700">Standorte: Schwertberg • Mauthausen • Linz • Online (DACH)</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#kontakt" class="text-primary.green hover:underline">Kontakt</a>
+          <a href="#termin" class="text-white bg-accent.orange hover:bg-orange-600 transition px-3 py-1 rounded">Termin buchen</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur sticky top-0 z-40 border-b border-neutral-200">
+      <div class="mx-auto container-default px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-3">
+          <!-- Replace with real logo -->
+          <div class="w-9 h-9 rounded-full bg-primary.green/90"></div>
+          <div class="leading-tight">
+            <div class="text-lg font-semibold text-neutral-900">Ja zum Leben</div>
+            <div class="text-xs text-neutral-600">Mentale Stärke & Ganzheitliche Gesundheit</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#trust" class="hover:text-primary.green">Vertrauen</a>
+          <a href="#about" class="hover:text-primary.green">Über uns</a>
+          <a href="#services" class="hover:text-primary.green">Angebote</a>
+          <a href="#audiences" class="hover:text-primary.green">Für wen</a>
+          <a href="#leadmagnets" class="hover:text-primary.green">Downloads</a>
+          <a href="#kontakt" class="hover:text-primary.green">Kontakt</a>
+          <a href="#termin" class="px-3 py-1 rounded bg-accent.orange text-white hover:bg-orange-600">Termin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="flex-1">
+      <!-- Hero Section -->
+      <section class="relative overflow-hidden bg-primary.beige">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary.beige to-white opacity-80"></div>
+        <div class="relative mx-auto container-default px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-neutral-900">
+              Ja zum Leben – <span class="text-primary.green">Entdecke deine mentale Stärke</span> und ganzheitliche Gesundheit
+            </h1>
+            <p class="mt-5 text-lg md:text-xl text-neutral-700">
+              50 Jahre geballte Expertise: Wenn Mentaltraining auf Phyto‑Energetik trifft.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#termin" class="inline-flex items-center justify-center px-5 py-3 rounded-md bg-accent.orange text-white font-semibold shadow-soft hover:bg-orange-600">
+                Kostenloses Erstgespräch vereinbaren
+              </a>
+              <a href="#methoden" class="inline-flex items-center justify-center px-5 py-3 rounded-md border border-primary.green text-primary.green font-semibold hover:bg-primary.green hover:text-white transition">
+                Mehr über unsere Methoden
+              </a>
+            </div>
+            <div class="mt-6 flex items-center gap-6 text-sm text-neutral-600">
+              <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary.green"></span>Online & vor Ort in OÖ</div>
+              <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary.blue"></span>100% nebenwirkungsfrei</div>
+            </div>
+          </div>
+          <div class="relative">
+            <!-- Replace with real hero image of both experts in nature -->
+            <div class="aspect-[4/3] w-full rounded-xl bg-neutral-200 border border-neutral-300 overflow-hidden flex items-center justify-center">
+              <span class="text-neutral-500">Hero-Image: Beide Experten in natürlicher Umgebung</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Badges -->
+      <section id="trust" class="py-12 md:py-16 bg-white">
+        <div class="mx-auto container-default px-4">
+          <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <li class="p-4 rounded-lg border text-center">
+              <div class="text-sm text-neutral-600">20+ Jahre</div>
+              <div class="text-lg font-semibold text-neutral-900">Mentaltraining-Expertise</div>
+            </li>
+            <li class="p-4 rounded-lg border text-center">
+              <div class="text-sm text-neutral-600">600+ Kunden</div>
+              <div class="text-lg font-semibold text-neutral-900">in Phyto‑Energetik</div>
+            </li>
+            <li class="p-4 rounded-lg border text-center">
+              <div class="text-sm text-neutral-600">100%</div>
+              <div class="text-lg font-semibold text-neutral-900">nebenwirkungsfrei</div>
+            </li>
+            <li class="p-4 rounded-lg border text-center">
+              <div class="text-sm text-neutral-600">Online & Vor Ort</div>
+              <div class="text-lg font-semibold text-neutral-900">Oberösterreich</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      <section id="about" class="py-16 md:py-24 bg-primary.beige/50">
+        <div class="mx-auto container-default px-4 grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Über uns</h2>
+            <p class="mt-4 text-neutral-700">
+              Wir zeigen dir, wie einfach Gesundheit entstehen und bleiben kann – durch die Verbindung aus mentaler Klarheit und energetischer Pflanzenheilkunde.
+            </p>
+            <p class="mt-4 text-neutral-700">
+              Die Kombination aus Saschas KLARE‑Methode und Gerdas Phyto‑Energetik schafft Raum für Selbstentdeckung, nachhaltige Entscheidungen und spürbare Energie.
+            </p>
+            <div id="methoden" class="mt-6 grid sm:grid-cols-2 gap-6">
+              <div class="p-5 rounded-lg bg-white border">
+                <h3 class="font-semibold text-neutral-900">Sascha Kohler</h3>
+                <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+                  <li>Mentaltrainer & Coach (NLP‑Master & Trainer)</li>
+                  <li>KLARE‑Methode: 5‑Schritte für Klarheit & Kongruenz</li>
+                  <li>Online‑Mentaltraining, Walk & Talk, Vorträge</li>
+                  <li>Website: <a href="https://sascha-kohler.at" class="text-primary.green underline" target="_blank" rel="noopener">sascha-kohler.at</a></li>
+                </ul>
+              </div>
+              <div class="p-5 rounded-lg bg-white border">
+                <h3 class="font-semibold text-neutral-900">Gerda Ahorner</h3>
+                <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+                  <li>Phyto‑Energetikerin & Pharmazeutin</li>
+                  <li>600+ zufriedene Kunden, 1000+ Bachblüten‑Mischungen</li>
+                  <li>1:1 Coaching, Online‑Programm, Frauen‑Workshops</li>
+                  <li>Website: <a href="https://staging.gerda-ahorner.at" class="text-primary.green underline" target="_blank" rel="noopener">staging.gerda-ahorner.at</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="p-5 rounded-xl bg-white border shadow-soft">
+              <h3 class="font-semibold text-neutral-900">Unsere Vision</h3>
+              <p class="mt-2 text-neutral-700">Menschen stärken, damit Gesundheit einfach und alltagstauglich entsteht – mental, energetisch, persönlich.</p>
+            </div>
+            <div class="p-5 rounded-xl bg-white border">
+              <h3 class="font-semibold text-neutral-900">Qualifikationen</h3>
+              <ul class="mt-2 text-sm text-neutral-700 space-y-1 list-disc list-inside">
+                <li>Zertifizierter Mentaltrainer</li>
+                <li>NLP‑Master & Trainer</li>
+                <li>Pharmazeutin</li>
+                <li>Phyto‑Energetikerin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Overview -->
+      <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Unsere Angebote</h2>
+          <p class="mt-3 text-neutral-700 max-w-3xl">Mentaltraining, Phyto‑Energetik und gemeinsame Workshops – für Klarheit, Energie und Gesundheit.</p>
+
+          <div class="mt-10 grid md:grid-cols-3 gap-6">
+            <!-- Sascha -->
+            <article class="p-6 rounded-xl border bg-white">
+              <h3 class="text-xl font-semibold">Sascha – Mentaltraining</h3>
+              <ul class="mt-3 text-sm text-neutral-700 space-y-2 list-disc list-inside">
+                <li>KLARE‑Methode Coaching (5 Schritte)</li>
+                <li>Online‑Mentaltraining (60 Min)</li>
+                <li>Walk & Talk Coaching</li>
+                <li>Business‑Coaching für Führungskräfte</li>
+              </ul>
+              <div class="mt-4 flex gap-3">
+                <a href="#sascha-angebote" class="px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Mehr erfahren</a>
+                <a href="#termin" class="px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Jetzt buchen</a>
+              </div>
+            </article>
+
+            <!-- Gerda -->
+            <article class="p-6 rounded-xl border bg-white">
+              <h3 class="text-xl font-semibold">Gerda – Phyto‑Energetik</h3>
+              <ul class="mt-3 text-sm text-neutral-700 space-y-2 list-disc list-inside">
+                <li>Phyto‑Energetik 8‑Wochen Online‑Programm</li>
+                <li>1:1 Coaching & Bachblüten‑Mischungen</li>
+                <li>Frauen‑Workshops (Linz, Haus der Frau)</li>
+                <li>Familien‑Gesundheit (Medikamentenreduktion)</li>
+              </ul>
+              <div class="mt-4 flex gap-3">
+                <a href="#gerda-angebote" class="px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Mehr erfahren</a>
+                <a href="#termin" class="px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Jetzt buchen</a>
+              </div>
+            </article>
+
+            <!-- Gemeinsam -->
+            <article class="p-6 rounded-xl border bg-white">
+              <h3 class="text-xl font-semibold">Gemeinsam – Ja zum Leben</h3>
+              <ul class="mt-3 text-sm text-neutral-700 space-y-2 list-disc list-inside">
+                <li>Themenabende (Buchhandlung Mauthausen)</li>
+                <li>Ganzheitliche Workshops</li>
+                <li>Online‑Magazin (Body, Mind & Soul)</li>
+              </ul>
+              <div class="mt-4 flex gap-3">
+                <a href="#events" class="px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Termine</a>
+                <a href="#magazin" class="px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Magazin</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Audience Landing Cards -->
+      <section id="audiences" class="py-16 md:py-24 bg-primary.beige/50">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Für wen ist es geeignet?</h2>
+          <div class="mt-10 grid md:grid-cols-3 gap-6">
+            <!-- Führungskräfte -->
+            <article class="p-6 rounded-xl border bg-white flex flex-col">
+              <h3 class="text-xl font-semibold">Führungskräfte & Unternehmer</h3>
+              <div class="mt-3">
+                <h4 class="font-semibold text-sm text-neutral-900">Pain Points</h4>
+                <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1 mt-1">
+                  <li>Hohe Verantwortung & Zeitdruck</li>
+                  <li>Entscheidungsstress</li>
+                  <li>Burnout‑Prävention</li>
+                </ul>
+              </div>
+              <div class="mt-3">
+                <h4 class="font-semibold text-sm text-neutral-900">Lösung</h4>
+                <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1 mt-1">
+                  <li>Effiziente 60‑Min Online‑Sessions</li>
+                  <li>Mentale Entlastungstechniken</li>
+                  <li>Klarheitstechniken für Entscheidungen</li>
+                  <li>Energie‑Support bei Stress</li>
+                </ul>
+              </div>
+              <a href="#ziel-fuehrung" class="mt-4 inline-flex px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Führungskraft‑Coaching buchen</a>
+            </article>
+
+            <!-- Lebenskrisen -->
+            <article class="p-6 rounded-xl border bg-white flex flex-col">
+              <h3 class="text-xl font-semibold">Menschen in Lebenskrisen</h3>
+              <div class="mt-3">
+                <h4 class="font-semibold text-sm text-neutral-900">Pain Points</h4>
+                <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1 mt-1">
+                  <li>Orientierungslosigkeit</li>
+                  <li>Überforderung</li>
+                  <li>Selbstzweifel</li>
+                </ul>
+              </div>
+              <div class="mt-3">
+                <h4 class="font-semibold text-sm text-neutral-900">Lösung</h4>
+                <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1 mt-1">
+                  <li>KLARE 5‑Schritte‑Methode</li>
+                  <li>Ganzheitlich (mental + energetisch)</li>
+                  <li>Selbstheilungskräfte aktivieren</li>
+                  <li>Schritt‑für‑Schritt Begleitung</li>
+                </ul>
+              </div>
+              <a href="#ziel-krise" class="mt-4 inline-flex px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Krisenbegleitung anfragen</a>
+            </article>
+
+            <!-- Frauen & Mütter -->
+            <article class="p-6 rounded-xl border bg-white flex flex-col">
+              <h3 class="text-xl font-semibold">Frauen & Mütter</h3>
+              <div class="mt-3">
+                <h4 class="font-semibold text-sm text-neutral-900">Pain Points</h4>
+                <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1 mt-1">
+                  <li>Work‑Life‑Balance</li>
+                  <li>Erschöpfung durch Mehrfachbelastung</li>
+                  <li>Verlust der eigenen Identität</li>
+                </ul>
+              </div>
+              <div class="mt-3">
+                <h4 class="font-semibold text-sm text-neutral-900">Lösung</h4>
+                <ul class="list-disc list-inside text-sm text-neutral-700 space-y-1 mt-1">
+                  <li>Frauen‑Frei‑Raum Workshops</li>
+                  <li>Energetische Aufladung</li>
+                  <li>Selbstwert & Abgrenzung stärken</li>
+                  <li>Individuell auf Frauenthemen abgestimmt</li>
+                </ul>
+              </div>
+              <a href="#ziel-frauen" class="mt-4 inline-flex px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Frauen‑Coaching entdecken</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lead Magnets / Downloads -->
+      <section id="leadmagnets" class="py-16 md:py-24 bg-white">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Kostenlose Ressourcen</h2>
+          <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="p-5 rounded-xl border bg-white flex flex-col">
+              <h3 class="font-semibold">30‑Min Erstgespräch</h3>
+              <p class="mt-1 text-sm text-neutral-700">Lerne uns kennen – online oder vor Ort.</p>
+              <a href="#termin" class="mt-3 inline-flex px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Jetzt buchen</a>
+            </article>
+            <article class="p-5 rounded-xl border bg-white flex flex-col">
+              <h3 class="font-semibold">Mini‑Kurs: KLARE‑Methode</h3>
+              <p class="mt-1 text-sm text-neutral-700">5 Schritte zu mentaler Klarheit.</p>
+              <a href="#download-klare" class="mt-3 inline-flex px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Kostenlos starten</a>
+            </article>
+            <article class="p-5 rounded-xl border bg-white flex flex-col">
+              <h3 class="font-semibold">Bachblüten‑Guide</h3>
+              <p class="mt-1 text-sm text-neutral-700">Für mehr Balance im Alltag.</p>
+              <a href="#download-bachblueten" class="mt-3 inline-flex px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Gratis herunterladen</a>
+            </article>
+            <article class="p-5 rounded-xl border bg-white flex flex-col">
+              <h3 class="font-semibold">Ja zum Leben – Magazin</h3>
+              <p class="mt-1 text-sm text-neutral-700">Tipps für Body, Mind & Soul.</p>
+              <a href="#magazin" class="mt-3 inline-flex px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Zum Magazin</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials + Zahlen & Fakten -->
+      <section id="testimonials" class="py-16 md:py-24 bg-primary.beige/50">
+        <div class="mx-auto container-default px-4">
+          <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div>
+              <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Was Menschen sagen</h2>
+              <div class="mt-6 space-y-6">
+                <blockquote class="p-5 bg-white border rounded-xl shadow-soft">
+                  <p class="text-neutral-800">„Als berufstätige Mutter war ich völlig erschöpft… Heute fühle ich mich wieder kraftvoll und klar."</p>
+                </blockquote>
+                <blockquote class="p-5 bg-white border rounded-xl shadow-soft">
+                  <p class="text-neutral-800">„Die KLARE‑Methode hat mein Leben verändert – ich treffe Entscheidungen mit Vertrauen."</p>
+                </blockquote>
+                <blockquote class="p-5 bg-white border rounded-xl shadow-soft">
+                  <p class="text-neutral-800">„Endlich wieder Energie im Alltag – danke für die empathische Begleitung!"</p>
+                </blockquote>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Zahlen & Fakten</h2>
+              <div class="mt-6 grid grid-cols-2 gap-4">
+                <div class="p-4 text-center rounded-lg border bg-white">
+                  <div class="text-3xl font-extrabold text-primary.green">600+</div>
+                  <div class="text-sm text-neutral-600">zufriedene Kunden</div>
+                </div>
+                <div class="p-4 text-center rounded-lg border bg-white">
+                  <div class="text-3xl font-extrabold text-primary.green">20+</div>
+                  <div class="text-sm text-neutral-600">Jahre Erfahrung</div>
+                </div>
+                <div class="p-4 text-center rounded-lg border bg-white">
+                  <div class="text-3xl font-extrabold text-primary.green">1000+</div>
+                  <div class="text-sm text-neutral-600">Bachblüten‑Mischungen</div>
+                </div>
+                <div class="p-4 text-center rounded-lg border bg-white">
+                  <div class="text-3xl font-extrabold text-primary.green">100%</div>
+                  <div class="text-sm text-neutral-600">Weiterempfehlung</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deep Service Sections (anchor-only placeholders for Divi mapping) -->
+      <section id="sascha-angebote" class="py-16 md:py-24 bg-white">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Sascha – Angebote</h2>
+          <p class="mt-3 text-neutral-700 max-w-3xl">KLARE‑Methode, Online‑Mentaltraining, Walk & Talk, Business‑Coaching. [Divi: Accordions + CTAs]</p>
+        </div>
+      </section>
+      <section id="gerda-angebote" class="py-16 md:py-24 bg-primary.beige/50">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Gerda – Angebote</h2>
+          <p class="mt-3 text-neutral-700 max-w-3xl">8‑Wochen Programm, 1:1 Coaching & Bachblüten, Frauen‑Workshops, Familien‑Gesundheit. [Divi: Blurbs + Toggles]</p>
+        </div>
+      </section>
+
+      <!-- Events / Magazin placeholders -->
+      <section id="events" class="py-16 md:py-24 bg-white">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Themenabende & Workshops</h2>
+          <p class="mt-3 text-neutral-700 max-w-3xl">Buchhandlung Mauthausen & gemeinsame Events. [Divi: Events-Grid]</p>
+        </div>
+      </section>
+      <section id="magazin" class="py-16 md:py-24 bg-primary.beige/50">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Online‑Magazin</h2>
+          <p class="mt-3 text-neutral-700 max-w-3xl">Tipps für Body, Mind & Soul. [Divi: Blog‑Module mit Kategorien]</p>
+        </div>
+      </section>
+
+      <!-- Kontakt / Termin (Google Calendar Integration placeholder) -->
+      <section id="kontakt" class="py-16 md:py-24 bg-white">
+        <div class="mx-auto container-default px-4 grid md:grid-cols-2 gap-10">
+          <div>
+            <h2 class="text-2xl md:text-4xl font-bold text-neutral-900">Kontakt</h2>
+            <p class="mt-3 text-neutral-700">Schreibe uns gern – DSGVO‑konform und sicher.</p>
+            <form class="mt-6 space-y-4">
+              <div>
+                <label class="block text-sm font-medium">Name</label>
+                <input type="text" class="mt-1 w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary.green" placeholder="Dein Name" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">E‑Mail</label>
+                <input type="email" class="mt-1 w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary.green" placeholder="dein@mail.at" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Nachricht</label>
+                <textarea rows="4" class="mt-1 w-full rounded-md border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary.green" placeholder="Wobei dürfen wir dich unterstützen?"></textarea>
+              </div>
+              <div class="flex items-start gap-2 text-sm">
+                <input type="checkbox" id="privacy" class="mt-1" />
+                <label for="privacy">Ich stimme der Verarbeitung meiner Daten gemäß der Datenschutzerklärung zu.</label>
+              </div>
+              <button type="submit" class="inline-flex px-5 py-3 rounded-md bg-primary.green text-white hover:bg-emerald-800">Nachricht senden</button>
+            </form>
+          </div>
+          <div id="termin" class="bg-primary.beige/50 p-6 rounded-xl border">
+            <h3 class="text-xl font-semibold">Termin online vereinbaren</h3>
+            <p class="mt-2 text-neutral-700">Integration via Google Calendar / externes Buchungstool. [Divi: Code‑Modul / iFrame]</p>
+            <div class="mt-4 aspect-[16/9] w-full rounded-lg bg-white border flex items-center justify-center text-neutral-500">
+              Widget‑Placeholder – Online‑Buchung
+            </div>
+            <div class="mt-4 flex gap-3">
+              <a href="#" class="px-4 py-2 rounded bg-accent.orange text-white hover:bg-orange-600">Jetzt kostenloses Gespräch buchen</a>
+              <a href="#" class="px-4 py-2 rounded border border-primary.green text-primary.green hover:bg-primary.green hover:text-white">Terminoptionen</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Locations & Local SEO Keywords -->
+      <section id="locations" class="py-12 md:py-16 bg-primary.beige/50">
+        <div class="mx-auto container-default px-4">
+          <h2 class="text-xl md:text-2xl font-bold text-neutral-900">Standorte & Lokale Suche</h2>
+          <div class="mt-4 grid md:grid-cols-4 gap-6 text-sm">
+            <div>
+              <h4 class="font-semibold">Standorte</h4>
+              <ul class="mt-2 space-y-1 text-neutral-700">
+                <li>Schwertberg (Praxis)</li>
+                <li>Mauthausen (Themenabende)</li>
+                <li>Linz (Frauen‑Workshops)</li>
+                <li>Online (deutschsprachiger Raum)</li>
+              </ul>
+            </div>
+            <div class="md:col-span-2">
+              <h4 class="font-semibold">Keywords</h4>
+              <ul class="mt-2 space-y-1 text-neutral-700">
+                <li>Mentaltraining Oberösterreich</li>
+                <li>Bachblüten Beratung Linz</li>
+                <li>Phyto‑Energetik Schwertberg</li>
+                <li>Ganzheitliche Gesundheit Mauthausen</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold">Adresse</h4>
+              <p class="mt-2 text-neutral-700">Furth 6, 4311 Schwertberg</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal -->
+      <section id="legal" class="py-12 md:py-16 bg-white">
+        <div class="mx-auto container-default px-4 text-sm text-neutral-700">
+          <h2 class="text-xl md:text-2xl font-bold text-neutral-900">Rechtliches</h2>
+          <ul class="mt-3 list-disc list-inside space-y-1">
+            <li>Disclaimer: Beratung ersetzt keine medizinische Behandlung.</li>
+            <li>DSGVO‑konforme Datenschutzerklärung.</li>
+            <li>Impressum mit beiden Experten.</li>
+            <li>SSL‑Verschlüsselung & sichere Datenverarbeitung.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-neutral-200">
+      <div class="mx-auto container-default px-4 py-10 grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-lg font-semibold">Ja zum Leben</div>
+          <p class="mt-2 text-sm text-neutral-400">Mentale Klarheit trifft ganzheitliche Gesundheit.</p>
+        </div>
+        <div>
+          <div class="font-semibold">Sascha</div>
+          <ul class="mt-2 space-y-1 text-sm text-neutral-400">
+            <li><a href="#sascha-angebote" class="hover:text-white">Angebote</a></li>
+            <li><a href="https://sascha-kohler.at" target="_blank" rel="noopener" class="hover:text-white">sascha-kohler.at</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold">Gerda</div>
+          <ul class="mt-2 space-y-1 text-sm text-neutral-400">
+            <li><a href="#gerda-angebote" class="hover:text-white">Angebote</a></li>
+            <li><a href="https://staging.gerda-ahorner.at" target="_blank" rel="noopener" class="hover:text-white">staging.gerda-ahorner.at</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold">Kontakt</div>
+          <ul class="mt-2 space-y-1 text-sm text-neutral-400">
+            <li><a href="#kontakt" class="hover:text-white">Kontaktformular</a></li>
+            <li><a href="#termin" class="hover:text-white">Termin vereinbaren</a></li>
+            <li><a href="#legal" class="hover:text-white">Rechtliches</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-neutral-800">
+        <div class="mx-auto container-default px-4 py-4 text-xs text-neutral-500 flex flex-wrap items-center justify-between">
+          <span>© <span id="year"></span> Ja zum Leben</span>
+          <div class="flex items-center gap-3">
+            <a href="#legal" class="hover:text-neutral-300">Datenschutz</a>
+            <a href="#legal" class="hover:text-neutral-300">Impressum</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Divi Mapping Notes:
+    - Jede Section hat eine eindeutige id (Hero, Trust, About, Services, Audiences, Leadmagnets, Testimonials, Sascha/Gerda‑Angebote, Events, Magazin, Kontakt, Termin, Locations, Legal)
+    - Übertrage die Struktur als Divi‑Sektionen/Zeilen/Module (Headline, Text, Button, Bild, Blurb, Toggle, Accordion, Blog, Code‑Modul für Buchungs‑Widget)
+    - Farben: primary.green #4A7C59, primary.blue #5B9BD5, primary.beige #F5F1E8, accent.orange #E67E22, accent.purple #9B59B6
+    - CTAs: Orange als Haupt‑Akzent, sekundär Outline in primary.green
+    - Bildstil: Natürlich, warmes Licht, keine Stock‑Optik
+  -->
+</body>
+</html>
