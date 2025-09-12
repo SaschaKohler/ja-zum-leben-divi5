@@ -59,6 +59,12 @@
     var root = document.getElementById('jzl-consent-banner-root');
     if (!root) return;
 
+    // Apply UI options (colors, position)
+    var UI = SETTINGS.ui || {};
+    if (UI.primaryColor) root.style.setProperty('--jzl-primary', UI.primaryColor);
+    if (UI.textColor) root.style.setProperty('--jzl-text', UI.textColor);
+    if (UI.backgroundColor) root.style.setProperty('--jzl-bg', UI.backgroundColor);
+
     var I = (SETTINGS.i18n || {});
     var title = I.title || 'Wir respektieren deine Privatsphäre';
     var text = I.text || 'Wir verwenden Cookies, um unsere Website zu verbessern. Du kannst selbst entscheiden, welche Kategorien du zulassen möchtest.';
@@ -89,7 +95,9 @@
       ]);
     }
 
-    var container = el('div', { class:'jzl-consent-container', role:'dialog', 'aria-modal':'true', 'aria-labelledby':'jzl-consent-title' }, [
+    var tpl = (UI.template && typeof UI.template === 'string') ? UI.template : 'template1';
+    var containerClass = 'jzl-consent-container' + (UI.position === 'top' ? ' top' : '') + ' tpl-' + tpl;
+    var container = el('div', { class: containerClass, role:'dialog', 'aria-modal':'true', 'aria-labelledby':'jzl-consent-title' }, [
       el('div', { class:'jzl-consent-inner' }, [
         el('h3', { id:'jzl-consent-title', class:'jzl-consent-title' }, [ title ]),
         el('p', { class:'jzl-consent-text' }, [ text ]),

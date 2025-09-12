@@ -8,29 +8,36 @@
 .jzl-consent-container {
   position: fixed; left: 50%; transform: translateX(-50%);
   bottom: 16px; max-width: 760px; width: calc(100% - 24px);
-  background: #fff; color: #111; border-radius: 12px;
+  background: var(--jzl-bg, #fff); color: var(--jzl-text, #111); border-radius: 12px;
   box-shadow: 0 20px 60px -10px rgba(0,0,0,.3);
   z-index: 99999; overflow: hidden; border: 1px solid #e5e7eb;
 }
+.jzl-consent-container.top { top: 16px; bottom: auto; }
+.jzl-consent-container.tpl-template1 { /* classic */ border-radius: 12px; }
+.jzl-consent-container.tpl-template2 { border-radius: 8px; border: 1px solid #d1d5db; padding-bottom: 4px; }
+.jzl-consent-container.tpl-template3 { border-radius: 16px; box-shadow: 0 30px 80px -20px rgba(0,0,0,.35); }
+.jzl-consent-container.tpl-template4 { left: 0; transform: none; width: 100%; max-width: none; border-radius: 0; }
 .jzl-consent-inner { padding: 16px; }
 .jzl-consent-title { font-weight: 700; font-size: 16px; margin: 0; }
 .jzl-consent-text { font-size: 14px; color: #374151; margin: 8px 0 12px; }
 .jzl-consent-links { font-size: 12px; color: #4b5563; margin-bottom: 12px; }
-.jzl-consent-links a { color: #2563eb; text-decoration: underline; }
+.jzl-consent-links a { color: var(--jzl-primary, #2563eb); text-decoration: underline; }
 .jzl-consent-categories { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; margin-bottom: 12px; }
 .jzl-consent-cat { padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; }
 .jzl-consent-cat h4 { margin: 0 0 4px; font-size: 13px; }
 .jzl-consent-cat p { margin: 0; font-size: 12px; color: #4b5563; }
 .jzl-consent-actions { display: flex; gap: 8px; justify-content: flex-end; }
-.jzl-btn { appearance: none; border: 1px solid #e5e7eb; background: #fff; color: #111; padding: 8px 12px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background .2s, color .2s, border-color .2s, box-shadow .2s; }
+.jzl-consent-container.tpl-template2 .jzl-consent-actions { justify-content: space-between; }
+.jzl-consent-container.tpl-template4 .jzl-consent-actions { justify-content: center; }
+.jzl-btn { appearance: none; border: 1px solid #e5e7eb; background: #fff; color: var(--jzl-text, #111); padding: 8px 12px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background .2s, color .2s, border-color .2s, box-shadow .2s; }
 /* Primary aligns to site CTA (purple). Adjust hex if needed */
-.jzl-btn-primary { background: #7C3AED; border-color: #7C3AED; color: #fff; }
-.jzl-btn-primary:hover { background: #6D28D9; border-color: #6D28D9; }
+.jzl-btn-primary { background: var(--jzl-primary, #7C3AED); border-color: var(--jzl-primary, #7C3AED); color: #fff; }
+.jzl-btn-primary:hover { background: var(--jzl-primary, #6D28D9); border-color: var(--jzl-primary, #6D28D9); }
 .jzl-btn-outline { border-color: #4A7C59; color: #4A7C59; background: #fff; }
 .jzl-btn-outline:hover { background: #4A7C59; color: #fff; }
 .jzl-btn:focus { outline: none; box-shadow: 0 0 0 3px rgba(124,58,237,.25); }
 .jzl-consent-toggle { display: flex; align-items: center; gap: 8px; }
-.jzl-consent-toggle input { width: 16px; height: 16px; accent-color: #4A7C59; }
+.jzl-consent-toggle input { width: 16px; height: 16px; accent-color: var(--jzl-primary, #4A7C59); }
 
 @media (max-width: 560px) { .jzl-consent-categories { grid-template-columns: 1fr; } }
 
@@ -39,10 +46,12 @@
   position: fixed; z-index: 99990;
 }
 .jzl-consent-fab-left { left: 16px; bottom: 16px; }
+.jzl-consent-fab-right { right: 16px; bottom: 16px; }
 .jzl-consent-fab button {
   appearance: none; border-radius: 9999px; padding: 8px 12px; font-weight: 600; font-size: 12px;
-  border: 1px solid #e5e7eb; background: #fff; color: #111; box-shadow: 0 10px 25px -10px rgba(0,0,0,.3);
+  border: 1px solid #e5e7eb; background: #fff; color: var(--jzl-text, #111); box-shadow: 0 10px 25px -10px rgba(0,0,0,.3);
 }
 .jzl-consent-fab button:hover { background: #f8fafc; }
-.jzl-consent-fab .jzl-fab-primary { background: #7C3AED; border-color: #7C3AED; color: #fff; }
+.jzl-consent-fab .jzl-fab-primary { background: var(--jzl-primary, #7C3AED); border-color: var(--jzl-primary, #7C3AED); color: #fff; }
 .jzl-consent-fab .jzl-fab-primary:hover { background: #6D28D9; }
+.jzl-consent-fab .jzl-fab-avatar { width: 18px; height: 18px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 6px; border: 1px solid rgba(0,0,0,.1); background: #fff; }
